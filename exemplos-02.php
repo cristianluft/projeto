@@ -1,9 +1,12 @@
 <?php
 
-$nome = (int)$_GET["a"];
-$ano = (int)$_GET["b"];
-$ip = $_SERVER["SCRIPT_NAME"];
+function teste() {
+    global $nome;
+    $nome = "Cristian";
+}
 
-echo ($ip);
+teste();
+
+echo $nome;
 
 ?>
